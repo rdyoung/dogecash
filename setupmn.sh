@@ -7,7 +7,7 @@ COIN_DAEMON='dogecashd'
 COIN_CLI='dogecash-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/dogecash/dogecash'
-COIN_TGZ='https://github.com/dogecash/dogecash/releases/download/v5.0.1/DogeCash-5.0.1-x86_64-linux-gnu.tar.gz'
+COIN_TGZ='https://github.com/dogecash/dogecash/releases/download/v5.0.1/DogeCash-5.2.1-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='DogeCash'
 COIN_PORT=56740 #Updated Port
@@ -215,6 +215,7 @@ addressindex=1
 txindex=1
 #bind=$NODEIP
 masternode=1
+staking=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 EOF
